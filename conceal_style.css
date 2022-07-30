@@ -1,0 +1,72 @@
+body {
+    
+    margin:50px;
+}
+
+div { 
+    padding: 35px;
+    border: 2px solid black;
+}
+
+.row {
+    background-color: rgb(209, 205, 218);
+    opacity: 0.8;
+}
+
+.col-6{
+    background-color: rgb(114, 113, 113);
+
+}
+
+.col-3{
+    background-color: rgb(64, 97, 97);
+        
+}
+
+.col-4{
+    background-color: rgb(230, 231, 135);
+    
+}
+
+.col-2{
+    background-color: rgb(55, 55, 194);
+}
+
+.row1{
+    background-color: rgb(159, 38, 184);
+}
+.col6 {
+    background-color: rgb(145, 100, 100);
+}
+
+.row2{
+    background-color: rgb(61, 140, 209);
+}
+
+.row3 {
+    background-color: rgb(46, 32, 58);
+}
+
+.row4 {
+    background-color: rgb(228, 128, 89);
+}
+
+.row5{
+    background-color: rgb(145, 236, 236);
+}
+
+.col3{
+    background-color: rgb(236, 33, 192);
+}
+.col2{
+    background-color: rgb(216, 51, 51);
+}
+.col1{
+    background-color: rgba(48, 163, 25, 0.849);
+}
+.col5{
+    background-color: white;
+}
+.col0{
+    background-color:lightslategray;
+}
