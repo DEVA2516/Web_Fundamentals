@@ -11,6 +11,9 @@ div {
 .row {
     background-color: rgb(209, 205, 218);
     opacity: 0.8;
+    position:absolute;
+    top:0%;
+    lefst:0%
 }
 
 .col-6{
