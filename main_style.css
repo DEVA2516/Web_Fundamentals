@@ -1,0 +1,25 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.container-fluid{
+    margin-top: 11px;
+    background: #dee2e6;
+} 
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.list {
+    padding: 10px;
+}
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
