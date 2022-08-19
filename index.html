@@ -19,39 +19,97 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container">
+        <div class="row header">
 
-            <div class="col-6">logo </div>
+            <div class="col-6 ">
+                <div class="row">
+                    <div class="col-4 logo"></div>
+                    <div class="col-8">
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                                aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary">search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="col-6 list">
+            <div class="col-6 Menu">
 
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Anime Series</a></li>
-                    <li><a href="#">Anime Movies</a></li>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Genre
-                        </a>
+                    <li><a href="#">Anime series</a></li>
+                    <li><a href="#">Anime movies</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                Genre
+                            </a>
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Adventure</a></li>
-                            <li><a class="dropdown-item" href="#">Comedy</a></li>
-                        </ul>
-                    </div>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Adventure</a></li>
+                                <li><a class="dropdown-item" href="#">Comedy</a></li>
+                                <li><a class="dropdown-item" href="#">Demons</a></li>
+                                <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                                <li><a class="dropdown-item" href="#">Mecha</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+                                <li><a class="dropdown-item" href="#">Supernatural</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
 
             </div>
         </div>
 
-        <div class="container">
+        <div class="row image">
+
+            <div class="row">
+
+                <div class="col-4 Slides1">
+                    <img src="assets/girl.png" alt="your Name">
+                </div>
+                <div class="col-4 Slides1">
+                    <img src="assets/greninja.png" alt="One Piece">
+                </div>
+                <div class="col-4 Slides1">
+                    <img src="assets/naruto.jpg" alt="One Piece">
+                </div>
+            </div>
+            <div class="row image">
+                <div class="col-4 Slides2"><img src="assets/ball.jpg" alt="My Hero Academia" class="mySlides">
+                    <!-- <img src="assets/my_hero_academia.png" alt="My Hero Academia" class="mySlides"> -->
+                    <!-- <img src="assets/Aot.jpg" alt="My Hero Academia" class="myslides"> -->
+                </div>
+                <div class="col-4 mySlide2s"> <img src="assets/sao.png" alt="Naruto"></div>
+                <div class="col-4 mySlides1">
+                    <img src="assets/zoro.jpg" alt="One Piece">
+                </div>
+            </div>
+
         </div>
     </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
 
 </body>
 

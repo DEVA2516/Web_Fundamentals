@@ -1,16 +1,52 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: medium;
-    background-color: black;
+    color: white;
+    font-weight: 500;
+    background-color: #000000cf;}
+
+.header {
+    background-color: #2d2d2d;
+    margin-bottom: 60px;
+
+}
+.row{
+    --bs-gutter-x: 0.5rem;
 }
 
-div {
-    margin-top: 11px;
+
+.logo {
+    padding: 20px;
+    background: url("./cdnlogo.com_anime-plus.svg") no-repeat;
 }
 
-.row {
-    border:0px solid black;
+.input-group {
+
+    padding: 12px;
 }
+
+input[type='search'] {
+    background-color: #00000012;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #f88c00;
+    border-color: #fff;
+}
+
+.btn-outline-primary {
+    color: #fff;
+    border-color: white;
+    font-weight: 500;
+
+}
+.form-control:focus {
+     color: #fff; 
+    background-color: #00000012; 
+     border-color: #fff; 
+    outline: 0;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -19,8 +55,14 @@ ul {
 
 }
 
-.list {
-    padding: 10px;
+li {
+    padding: 12px;
+}
+
+li:hover,
+a:hover {
+    background-color: #f88c00;
+    color: white;
 }
 
 a {
@@ -28,6 +70,24 @@ a {
     text-decoration: none;
 }
 
-.container{
-    margin-top:20px ;
+.dropdown-menu {
+    background-color: #2d2d2d;
+
 }
+
+.dropdown-item {
+    color: white;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+     background-color: #f88c00; 
+}
+
+.image img {
+    height: auto;
+    width:100%;
+    margin : 2px;
+}
+
